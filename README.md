@@ -1,13 +1,8 @@
-# UI candidates test v2.0 (From Zemoga)
+# Zemoga UI candidates test v2
 
-PNG Comp:
-- https://s3-us-west-2.amazonaws.com/zemoga-files/ui/candidates-test/test-ui-v2.png
-
-PSD Comp:
-- https://s3-us-west-2.amazonaws.com/zemoga-files/ui/candidates-test/test-ui-v2.psd.zip
+Comps: [PNG](https://s3-us-west-2.amazonaws.com/zemoga-files/ui/candidates-test/test-ui-v2.png) / [PSD](https://s3-us-west-2.amazonaws.com/zemoga-files/ui/candidates-test/test-ui-v2.psd.zip)
 
 ## Layout HTML-CSS
-
 - Rely on HTML5 semantics and CSS3 features as possible. Assume cool browsers such as Chrome, Firefox Safari and Edge, latest versions.
 
 Requirements:
