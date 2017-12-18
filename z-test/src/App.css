@@ -22,3 +22,22 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+.ruling-box-home{
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.ruling-box{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 10px;
+}
