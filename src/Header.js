@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import Menu from './MainNav';
-import logo from './logo.svg';
 
 class Header extends Component {
   render() {
     return (
-      <header className="header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Rule of Thumb</h2>
-        <h2>This is the Header Component</h2>
-        <Menu />
+      <header className="header container fixed-top">
+        <div className="row">
+          <div className="col-md-6">
+            <h1 className="display-4 text-left">Rule of Thumb.</h1>
+          </div>
+          <div className="col">
+            <Menu />
+          </div>
+        </div>
       </header>
     );
   }
