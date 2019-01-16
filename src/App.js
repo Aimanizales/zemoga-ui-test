@@ -13,7 +13,7 @@ class App extends Component {
 				<main className="mt-5 pt-5 container">
 					<BeCounted />
 					<h2>Votes</h2>
-					<section className="ruling-box-home d-flex">
+					<section className="ruling-box d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-stretch">
 						<RulingBox
 							name="Mark Zuckerberg"
 						/>
