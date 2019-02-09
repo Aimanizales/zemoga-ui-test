@@ -1,0 +1,7 @@
+{
+	"editor.autoIndent": false,
+	"editor.detectIndentation": false,
+	"editor.foldingStrategy": "indentation",
+	"highlight-matching-tag.highlightFromContent": true,
+	"highlight-matching-tag.highlightSelfClosing": true
+}

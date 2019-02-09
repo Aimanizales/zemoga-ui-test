@@ -17,6 +17,6 @@ class BeCounted extends Component {
 			</section>
 		);
 	}
-}
+};
 
 export default BeCounted;

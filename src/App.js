@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
+import Hero from './Hero';
 import Footer from './Footer';
 import RulingBox from './RulingBox';
 import BeCounted from './BeCounted';
@@ -10,6 +11,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Header />
+				<Hero image="pope-francis"/>
 				<main className="mt-5 pt-5 container">
 					<BeCounted />
 					<h2>Votes</h2>
@@ -27,9 +29,8 @@ class App extends Component {
 				</main>
 				<Footer />
 			</div>
-			);
-		}
+		);
 	}
-	
-	export default App;
-	
+};
+
+export default App;
