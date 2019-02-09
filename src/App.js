@@ -11,19 +11,28 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<Hero image="pope-francis"/>
+				<Hero
+					image="pope-francis.jpg"
+				/>
 				<main className="mt-5 pt-5 container">
 					<BeCounted />
 					<h2>Votes</h2>
 					<section className="ruling-box d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-stretch">
 						<RulingBox
 							name="Mark Zuckerberg"
+							image="mark-zuckerberg.jpg"
 						/>
 						<RulingBox
 							name="Cristina Fernández de Kitchner"
+							image="kristina-fernandez-de-kitchner.jpg"
 						/>
 						<RulingBox
-							name="Malala Yousafai"
+							name="Malala Yousafzai"
+							image="malala-yousafzai.jpg"
+						/>
+						<RulingBox
+							name="Kanye West"
+							image="kanye-west.jpg"
 						/>
 					</section>
 				</main>

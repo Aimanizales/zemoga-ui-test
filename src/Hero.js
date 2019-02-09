@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 
 class Hero extends Component {
 	render() {
+		const divStyle = {
+			backgroundImage: 'url(' + this.props.image + ')',
+			backgroundSize: 'cover',
+			backgroundRepeat: 'no-repeat',
+			height: '90vh',
+		};
 		return (
-			<div className="hero container-fluid bg-success">
+			<div className="hero container-fluid" style={divStyle}>
 				<div className="container">
 					<div className="row">
 						<div className="col">
-							<h1 className="display-2">Pope francis</h1>
 						</div>
 					</div>
 				</div>
