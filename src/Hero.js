@@ -6,6 +6,7 @@ class Hero extends Component {
 			backgroundImage: 'url(' + this.props.image + ')',
 			backgroundSize: 'cover',
 			backgroundRepeat: 'no-repeat',
+			backgroundPosition: 'center',
 			height: '90vh',
 		};
 		return (
