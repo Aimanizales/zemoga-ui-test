@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class BeCounted extends Component {
 	render() {
 		return (
-			<section className="be-counted bg-secondary container">
+			<section className="be-counted container">
 				<div className="row">
 					<div className="col-3">
 						Speak out. Be heard. <h2>Be counted</h2>

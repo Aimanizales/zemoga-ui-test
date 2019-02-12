@@ -1,4 +1,6 @@
-.App {}
+.App {
+	font-family: 'Lato', sans-serif;
+}
 
 .App-logo {
 	animation: App-logo-spin infinite 20s linear;
@@ -35,6 +37,10 @@
 	background: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0));
 	color: white;
 	padding: 1.5rem 0;
+}
+
+.be-counted {
+	background-color: #ebebeb;
 }
 
 nav a {

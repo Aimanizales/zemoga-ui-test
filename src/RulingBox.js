@@ -9,15 +9,16 @@ class RulingBox extends Component {
 			backgroundRepeat: 'no-repeat',
 			backgroundPosition: 'center',
 			height: '100%',
+			width: '100%',
 		};
 		return (
-			<div className="ruling-box-item p-2">
+			<div className="ruling-box-item p-2 d-flex">
 				<div style={divStyle}>
-					<div className="rulingbox-content">
-						<h3 className="text-white-50">{this.props.name || 'Kanye West'}</h3>
-						<p>Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.</p>
+					<div className="rulingbox-content p-3">
+						<h3 className="text-white">{this.props.name || 'Kanye West'}</h3>
+						<p className="text-white date-category">1 month ago in business</p>
+						<p className="text-white">Paula se va a secar el pelito</p>
 						<a className="button" href="/">View Full Report</a>
-						<span className="date-category">1 month ago in business</span>
 					</div>
 					<PercentBar />
 				</div>
