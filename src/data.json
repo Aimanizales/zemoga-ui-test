@@ -1,0 +1,21 @@
+{
+	"candidates" : [{
+		"name": "Mark Zuckerberg",
+		"image": "mark-zuckerberg.jpg",
+		"percentScore": 40
+	},
+	{
+		"name": "Cristina Fernández de Kitchner",
+		"image": "kristina-fernandez-de-kitchner.jpg"
+	},
+	{
+		"name": "Malala Yousafzai",
+		"image": "malala-yousafzai.jpg",
+		"percentScore": 90
+	},
+	{
+		"name": "Kanye West",
+		"image": "kanye-west.jpg",
+		"percentScore": 2
+	}]
+}
