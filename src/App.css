@@ -26,11 +26,25 @@
 	margin-left: -0.5rem;
 }
 
+.ruling-box-content {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0));
+	padding-bottom: 1rem;
+}
+
+.ruling-box-content h3 {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+}
+
 .ruling-box-item {
 	height: 35rem;
 	/* width: 200px; */
 	flex-basis: 50%;
 	display: flex;
+}
+
+.date-category {
+	font-size: 0.7rem;
 }
 
 .header{
@@ -43,8 +57,48 @@
 	background-color: #ebebeb;
 }
 
+.percent-bar{
+	color: white;
+	width: 100%;
+	height: 2.5rem;
+	display: flex;
+}
+
+.percent-bar-up {
+	background-color: rgba(42,153,147,0.9);
+	line-height: 2.5rem;
+    text-indent: 0.5rem;
+	overflow: hidden;
+}
+
+.percent-bar-down {
+	background-color: rgba(255,173,29,0.9);
+	text-align: right;
+	line-height: 2.5rem;
+	overflow: hidden;
+}
+
+.percent-bar-down:before {
+	content: ' ';
+    width: 0.5rem;
+    float: right;
+    height: 5px;
+} 
+
 nav a {
 	color: white;
+}
+
+.button {
+	border: thin solid white;
+	color: white;
+	padding: 0.5rem 1rem;
+	font-size: 0.7rem;
+}
+
+h2 {
+	font-weight: 300;
+	margin-bottom: 0;
 }
 
 /* @keyframes App-logo-spin {

@@ -14,13 +14,14 @@ class App extends Component {
 				<Hero
 					image="pope-francis.jpg"
 				/>
-				<main className="mt-5 pt-5 container">
+				<main className="pt-4 container">
 					<BeCounted />
-					<h2>Votes</h2>
+					<h2 className="my-3">Votes</h2>
 					<section className="ruling-box d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-stretch">
 						<RulingBox
 							name="Mark Zuckerberg"
 							image="mark-zuckerberg.jpg"
+							percentUp="40"
 						/>
 						<RulingBox
 							name="Cristina Fernández de Kitchner"
@@ -29,10 +30,12 @@ class App extends Component {
 						<RulingBox
 							name="Malala Yousafzai"
 							image="malala-yousafzai.jpg"
+							percentUp="90"
 						/>
 						<RulingBox
 							name="Kanye West"
 							image="kanye-west.jpg"
+							percentUp="2"
 						/>
 					</section>
 				</main>
