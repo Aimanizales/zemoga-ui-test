@@ -1,22 +1,24 @@
 # My zemoga-test
 
 UI candidates test v2.0: [https://github.com/zemoga/ui-test](https://github.com/zemoga/ui-test)
-
 Project bootstrapped with _[Create-React-App](https://github.com/facebook/create-react-app)_.
 
 ---
 This exercise will be made outside Zemoga and delivered between the next 3 days that follows this test.
 
-##  Requirements
+## Requirements
 
-### Layout HTML-CSS:
+### Layout HTML-CSS
+
 - [ ] Media queries.
-- [ ] Non safe web font used: Lato.
+- [x] Non safe web font used: Lato.
 - [ ] Preprocessors/transpilers (LESS/SASS).
 - [ ] Clicking on one of the links of the main menu redirects the user to the other pages (only provided comp for main page. Use white pages with the title section on them).
 
 ### Interaction - JS
+
 Just add interaction in the middle voting boxes: Kanye West, Mark Zuckerberg, Cristina Fernández de Kirchner and Malala Yousafzai.
+
 - [ ] Create a data feed in JSON format with the structure that best suits the content for the voting boxes and populate the initial content from it.
 - [ ] The user can select either thumb up or thumb down button on each of the boxes (when the button is selected, a white border is displayed as featured in the comp)
 - [ ] Once the user clicks on the "Vote now” button, a message is displayed saying “Thank you for voting!” as well as a vote again button to vote again.
@@ -28,6 +30,7 @@ Just add interaction in the middle voting boxes: Kanye West, Mark Zuckerberg, Cr
 - [ ] Bonus points: Some sort of Test (E2E, BDD, etc)
 
 ## NodeJS
+
 **Only** for NodeJS or any other server side technology applies, or if you want to also show skills in this part:
 
 - [ ] Activate the Login/Signup link in the main menu by showing a basic login dialog.
@@ -42,6 +45,7 @@ Just add interaction in the middle voting boxes: Kanye West, Mark Zuckerberg, Cr
 ---
 
 ### Available Scripts
+
 See any lint errors in the console.
 
 `npm test` launches the test runner in the interactive watch mode. [More information](https://facebook.github.io/create-react-app/docs/running-tests).
