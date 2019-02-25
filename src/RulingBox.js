@@ -2,7 +2,29 @@ import React, { Component } from 'react';
 import PercentBar from './PercentBar';
 
 class RulingBox extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			percentUp: parseFloat(this.props.percentUp) || 0
+		}
+		// this.handleChange = this.handleChange.bind(this);
+	}
+
+	handleChange = () => {
+		this.setState((state) => {
+			// en este punto se estaba renderizando, así estuviera en 100%,
+			// pero se arregló con el return null.
+			if (state.percentUp >= 100) return null;
+			
+			return {
+				percentUp: state.percentUp < 100 ? state.percentUp + 1 : 100
+			}
+		});
+		// console.log('Handling click event...', this.state.percentUp);
+	}
+
 	render() {
+		// console.log('rendering RulingBox...', this.state.percentUp);
 		const divStyle = {
 			backgroundImage: 'url(' + this.props.image + ')',
 			backgroundSize: 'cover',
@@ -23,14 +45,12 @@ class RulingBox extends Component {
 							<p className="text-white">
 								Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.
 							</p>
-							<a className="button" href="/">Vote Now</a>
+							<button type="button" className="btn" href="/" onClick={this.handleChange}>Vote Now</button>
 						</div>
-						{this.props.percentUp ?
-							<PercentBar
-								percentUp={this.props.percentUp}
-							/> : null
-						}
-						
+						<PercentBar
+							name={this.props.name}
+							percentUp={this.state.percentUp}
+						/>
 					</div>
 				</div>
 			</div>
