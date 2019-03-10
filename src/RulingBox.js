@@ -5,26 +5,32 @@ class RulingBox extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			percentUp: parseFloat(this.props.percentUp) || 0
+			percentUp: parseFloat(this.props.percentUp) || 0,
+			voteEnabled: true
 		}
-		// this.handleChange = this.handleChange.bind(this);
 	}
+
+	// isDisabled = () => {
+	// 	return this.state.percentUp < 100;
+	// }
 
 	handleChange = () => {
 		this.setState((state) => {
-			// en este punto se estaba renderizando, así estuviera en 100%,
-			// pero se arregló con el return null.
-			if (state.percentUp >= 100) return null;
-			
-			return {
-				percentUp: state.percentUp < 100 ? state.percentUp + 1 : 100
+			let newValue = state.percentUp + 2;
+			if(newValue > 100) {
+				newValue = 100;
 			}
-		});
-		// console.log('Handling click event...', this.state.percentUp);
+			if(newValue < 0) {
+				newValue = 0;
+			}
+			console.log('newValue:', newValue);
+			return {
+				percentUp: newValue
+			}
+		})
 	}
 
 	render() {
-		// console.log('rendering RulingBox...', this.state.percentUp);
 		const divStyle = {
 			backgroundImage: 'url(' + this.props.image + ')',
 			backgroundSize: 'cover',
@@ -33,6 +39,7 @@ class RulingBox extends Component {
 			height: '100%',
 			width: '100%',
 		};
+		const isDisabled = this.state.percentUp >= 100
 		return (
 			<div className="ruling-box-item p-2">
 				<div style={divStyle}>
@@ -45,7 +52,15 @@ class RulingBox extends Component {
 							<p className="text-white">
 								Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.
 							</p>
-							<button type="button" className="btn" href="/" onClick={this.handleChange}>Vote Now</button>
+							<button
+								type="button"
+								className="btn"
+								disabled={isDisabled}
+								href="/"
+								onClick={this.handleChange}
+							>
+								Vote Now {this.isDisabled}
+							</button>
 						</div>
 						<PercentBar
 							name={this.props.name}

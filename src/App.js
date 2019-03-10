@@ -6,6 +6,13 @@ import Footer from './Footer';
 import RulingBox from './RulingBox';
 import BeCounted from './BeCounted';
 
+
+// const data = {
+// 	items: {
+// 		name: 'Mark Zuckerberg
+// 	}
+// };
+
 class App extends Component {
 	render() {
 		return (
@@ -30,7 +37,7 @@ class App extends Component {
 						<RulingBox
 							name="Malala Yousafzai"
 							image="malala-yousafzai.jpg"
-							percentUp="90"
+							percentUp="97"
 						/>
 						<RulingBox
 							name="Kanye West"
